@@ -1,0 +1,196 @@
+/* Flex basic setup and edge padding*/
+.boundbox, .header, .block1, .block2, .block3, .block4, .footer,
+ul, .leftside, .infopics, .bluebox {
+    display: flex;
+}
+
+.boundbox, .leftside, .block2, .block3, .footer {
+    flex-direction: column;
+}
+
+.infopics {
+    flex-wrap: wrap;
+}
+
+.section {
+    padding: 0 15%;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/* - */
+
+/* Color and font */
+p {
+    font-size: 18px;
+}
+
+.header, .block1, .footer {
+    background-color: #1f2937;
+}
+
+.block3 {
+    background-color: #e5e7eb;
+}
+
+button, .bluebox {
+    background-color: #3882f6;
+}
+
+button, h1, h3, .h-logo {
+    color: #f9faf8;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.h-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a, .leftside p, .footer {
+    color: #e5e7eb;
+}
+
+.block2-header, #quote, #quote-attrib {
+    color: #1f2937;
+}
+
+.block2-header, #quote {
+    font-size: 36px;
+}
+
+.block2-header {
+    font-weight: bolder;
+}
+
+#quote {
+    font-weight: light;
+    font-style: italic;
+}
+
+#q-attrib {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+/* - */
+
+/* Flexbox positioning rules and padding */
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+ul {
+    gap: 25px;
+}
+
+.block1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    gap: 50px;
+}
+
+#first-img {
+    width: 50%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.leftside {
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+}
+
+button {
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.block1 button {
+    border: none;
+    width: 20%;
+    height: 7%;
+}
+
+.block2 {
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.block2-header {
+    margin-bottom: 3%;
+}
+
+.infopics {
+    align-items: center;
+    gap: 50px;
+}
+
+.infopic {
+    text-align: center;
+    max-width: 200px;
+}
+
+.icon {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    border: 3px solid #3882f6;
+}
+
+.block3 {
+    padding: 5% 25%;
+}
+
+.block4 {
+    justify-content: center;
+    align-items: center;
+}
+
+.bluebox {
+    border-radius: 10px;
+    padding: 2% 7%;
+    margin: 7% 0;
+    align-items: center;
+    gap: 50px;
+}
+
+.bluebox-sub {
+    margin: 0;
+}
+
+.bluebox button {
+    width: 10%;
+    height: 10%;
+}
+
+.footer {
+    align-items: center;
+    gap: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
